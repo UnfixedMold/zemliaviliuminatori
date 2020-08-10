@@ -1,10 +1,8 @@
-@push('head')
-    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
-@endpush
-
 @extends('layouts.app')
 
 @section('content')
+
+
     <div class="container">
         <div class="card">
             <div class="card-header">{{ __('Invitations') }}</div>
