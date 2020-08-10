@@ -49753,8 +49753,6 @@ Vue.component('example-component', __webpack_require__(/*! ./components/ExampleC
 var app = new Vue({
   el: '#app'
 });
-new ClipboardJS('.btn');
-console.log("hjello");
 
 /***/ }),
 
