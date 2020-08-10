@@ -13,10 +13,6 @@ use \Illuminate\Support\Facades\Auth;
 |
 */
 
-// Any routes
-
-Route::redirect('/', '/login');
-
 // Auth routes
 
 Auth::routes();
@@ -29,4 +25,6 @@ Route::put('/members/{member}/update', 'MembersController@update')->name('update
 Route::get('/members', 'MembersController@index')->name('members');
 Route::post('/invitations', 'InvitationsController@store')->name('invitations.store');
 Route::get('/invitations', 'InvitationsController@index')->name('invitations');
+
+Route::redirect('/', '/login');
 
