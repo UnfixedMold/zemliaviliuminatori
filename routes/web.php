@@ -26,5 +26,6 @@ Route::get('/members', 'MembersController@index')->name('members');
 Route::post('/invitations', 'InvitationsController@store')->name('invitations.store');
 Route::get('/invitations', 'InvitationsController@index')->name('invitations');
 
+// Any routes
 Route::redirect('/', '/login');
 
