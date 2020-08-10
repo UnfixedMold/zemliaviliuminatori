@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9b004fd8-baea-4068-bf90-62fee0118bce" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/web.config" beforeDir="false" afterPath="$PROJECT_DIR$/public/web.config" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +198,7 @@
       <workItem from="1596902006681" duration="16537000" />
       <workItem from="1596962631714" duration="13830000" />
       <workItem from="1596982034377" duration="23848000" />
-      <workItem from="1597045352247" duration="12474000" />
+      <workItem from="1597045352247" duration="14675000" />
     </task>
     <servers />
   </component>
@@ -213,10 +214,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2338" y="198" width="1084" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596906730012" />
-    <state x="2877" y="522" width="636" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597048999524">
+    <state x="2877" y="522" width="636" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597064114130">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
-    <state x="2877" y="522" width="636" height="403" key="#com.intellij.fileTypes.FileTypeChooser/72.27.1848.1053/1920.0.2560.1440@1920.0.2560.1440" timestamp="1597048999524" />
+    <state x="2877" y="522" width="636" height="403" key="#com.intellij.fileTypes.FileTypeChooser/72.27.1848.1053/1920.0.2560.1440@1920.0.2560.1440" timestamp="1597064114130" />
     <state x="2619" y="131" width="502" height="832" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1596903095110">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
