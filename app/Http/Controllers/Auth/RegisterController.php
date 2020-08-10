@@ -3,11 +3,57 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Invitation;
 use App\Providers\RouteServiceProvider;
 use App\User;
+use Carbon\Carbon;
+use Illuminate\Auth\Events\Registered;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+
+trait RegisterUsersWithInvitation{
+    use RegistersUsers;
+
+    public function showRegistrationForm(Request $request)
+    {
+        $token = $request->get('token');
+        $invitation = Invitation::where('token', $token)->where('registered_at', null)->firstOrFail();
+        $email = $invitation->email;
+
+        return view('auth.register', ['email' => $email, 'token' => $token]);
+    }
+
+    public function register(Request $request)
+    {
+        $invitation = Invitation::where('token', $request->get('token'))
+            ->where('registered_at', null)
+            ->where('email', $request->get('email'))
+            ->firstOrFail();
+
+        $this->validator($request->all())->validate();
+
+        event(new Registered($user = $this->create($request->all())));
+
+        $this->guard()->login($user);
+
+        if ($response = $this->registered($request, $user, $invitation)) {
+            return $response;
+        }
+
+        return $request->wantsJson()
+            ? new Response('', 201)
+            : redirect($this->redirectPath());
+    }
+
+    protected function registered(Request $request, $user, Invitation $invitation)
+    {
+        $invitation->registered_at = Carbon::now()->toDateTimeString();
+        $invitation->save();
+    }
+}
 
 class RegisterController extends Controller
 {
@@ -22,7 +68,7 @@ class RegisterController extends Controller
     |
     */
 
-    use RegistersUsers;
+    use RegisterUsersWithInvitation;
 
     /**
      * Where to redirect users after registration.

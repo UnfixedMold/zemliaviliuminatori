@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9b004fd8-baea-4068-bf90-62fee0118bce" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/invitations.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/invitations.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +201,7 @@
       <workItem from="1596962631714" duration="13830000" />
       <workItem from="1596982034377" duration="23848000" />
       <workItem from="1597045352247" duration="17253000" />
-      <workItem from="1597075228294" duration="5090000" />
+      <workItem from="1597075228294" duration="6512000" />
     </task>
     <servers />
   </component>
@@ -232,10 +229,11 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2613" y="289" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/72.27.1848.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596967602628" />
-    <state x="2613" y="298" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596987424120">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="2844" y="397" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1597091016224">
+      <screen x="1920" y="0" width="2560" height="1440" />
     </state>
     <state x="2613" y="298" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1848.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1596987424120" />
+    <state x="2844" y="397" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1848.1053/1920.0.2560.1440@1920.0.2560.1440" timestamp="1597091016224" />
     <state x="631" y="331" width="719" height="452" key="EditFileWatcherDialog" timestamp="1596751902335">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -320,26 +318,15 @@
     </state>
     <state x="3119" y="394" width="847" height="783" key="find.popup/72.27.1848.1053/1920.0.2560.1440@1920.0.2560.1440" timestamp="1597089197691" />
     <state x="773" y="267" width="588" height="573" key="find.popup/72.27.1848.1053@72.27.1848.1053" timestamp="1596750817996" />
-    <state x="2863" y="329" width="672" height="678" key="search.everywhere.popup" timestamp="1597089257562">
+    <state x="2863" y="329" width="672" height="678" key="search.everywhere.popup" timestamp="1597090664747">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
     <state x="2627" y="247" width="672" height="509" key="search.everywhere.popup/72.27.1848.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1597004481678" />
     <state x="752" y="268" width="672" height="497" key="search.everywhere.popup/72.27.1848.1053/1920.0.1920.1080@72.27.1848.1053" timestamp="1597007672649" />
-    <state x="2863" y="329" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053/1920.0.2560.1440@1920.0.2560.1440" timestamp="1597089257562" />
+    <state x="2863" y="329" width="672" height="678" key="search.everywhere.popup/72.27.1848.1053/1920.0.2560.1440@1920.0.2560.1440" timestamp="1597090664747" />
     <state x="2925" y="634" width="540" height="179" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1596488475354">
       <screen x="1920" y="0" width="2560" height="1440" />
     </state>
     <state x="2925" y="634" width="540" height="179" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/72.27.1848.1053/1920.0.2560.1440@1920.0.2560.1440" timestamp="1596488475354" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/vendor/laravel/ui/auth-backend/RegistersUsers.php</url>
-          <line>44</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
